@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four-card-feature-section {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 5rem;
+}
+
+.headings {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.four-card-feature__description {
+  text-align: center;
+  margin-top: 1rem;
+  color: hsl(229, 6%, 66%);
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  width: 28rem;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1.2rem 1.2rem 0.2rem hsla(234, 12%, 34%, 0.1);
+
+  display: grid;
+  grid-template-rows: 2.4rem 8rem 4rem;
+}
+
+.supervisor {
+  grid-row: 1 / span 2;
+  place-self: center;
+  border-top: 0.3rem solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 0.3rem solid hsl(0, 78%, 62%);
+}
+
+.calculator {
+  grid-column: 3 / 4;
+  grid-row: -3/ -1;
+  place-self: center;
+  border-top: 0.3rem solid hsl(212, 86%, 64%);
+}
+
+.karma {
+  grid-column: -3 /-2;
+  border-top: 0.3rem solid hsl(34, 97%, 64%);
+}
+
+.heading-tertiary {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.6rem;
+}
+
+.card__description {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  width: 4rem;
+  justify-self: end;
+}

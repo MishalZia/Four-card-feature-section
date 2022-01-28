@@ -1,0 +1,26 @@
+@media (max-width: 23.5em) {
+  .four-card-feature-section {
+    padding: 4rem;
+    gap: 3rem;
+  }
+
+  .headings {
+    width: 24.5rem;
+  }
+
+  .heading-secondary,
+  .heading-primary {
+    font-size: 2rem;
+  }
+
+  .four-card-feature__description {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
